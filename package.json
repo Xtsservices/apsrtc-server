@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "dev": "node --loader ts-node/esm app.ts",
-  "start": "node dist/app.js",
-  "build": "tsc",
-  "prod": "cp .env.production .env && npm run build && npm run start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --loader ts-node/esm app.ts",
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "prod": "cp .env.production .env && npm run build && npm run start"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,8 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "mysql2": "^3.16.1"
